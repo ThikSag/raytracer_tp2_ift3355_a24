@@ -1,0 +1,4 @@
+# IDE and build folders
+.idea/
+build/
+build/**
