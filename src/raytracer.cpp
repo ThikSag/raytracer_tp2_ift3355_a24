@@ -51,6 +51,10 @@ void Raytracer::render(const Scene& scene, Frame* output)
 	// @@@@@@ VOTRE CODE ICI
 	// Calculez les paramètres de la caméra pour les rayons.
 
+	    //Paramètres de la caméra pour la profondeur de champs
+        double focus_distance = scene.camera.focus_distance;
+        double defocus_angle = scene.camera.defocus_angle ;
+
 	// Paramètres de la caméra dans l'espace monde
 	double3 posCam = scene.camera.position;
 	double3 dirVue = normalize(scene.camera.center - scene.camera.position); // direction de vue de la caméra
@@ -104,13 +108,27 @@ void Raytracer::render(const Scene& scene, Frame* output)
 				//Faites la moyenne des différentes couleurs obtenues suite à la récursion.
 				
 				// l'origine du rayon primaire est la position de l'oeil de la caméra dans l'espace Monde
-				ray.origin[0] = scene.camera.position[0];
+				/*ray.origin[0] = scene.camera.position[0];
 				ray.origin[1] = scene.camera.position[1];
-				ray.origin[2] = scene.camera.position[2];
+				ray.origin[2] = scene.camera.position[2];*/
 
 				// point aléatoire à l'intérieur de la zone/cercle de sampling qui est délimitée par le jitter_radius
 				double2 pAleatoire = random_in_unit_disk();
 				pAleatoire = pAleatoire * taillePixel * scene.jitter_radius;
+				
+				    //Pertubation de la position origine de la camera (profondeur de champs)
+                    double3 offset{0,0,0};
+                    if (defocus_angle > 0){
+                        double2 disk_rand = random_in_unit_disk();
+                        double cercle_defocus = focus_distance * tan(defocus_angle/2);
+                        disk_rand = disk_rand * taillePixel * scene.jitter_radius;
+                        offset = disk_rand.x * cercle_defocus * u + disk_rand.y * cercle_defocus * v;
+                    }
+                    ray.origin = scene.camera.position + offset;
+
+                    //Calculer la direction du nouveau point focus
+                    double3 new_focus = scene.camera.position + focus_distance * dirVue;
+                    ray.direction = normalize(new_focus - ray.origin);
 				
 				// position aléatoire dans le pixel actuel en coordonnée homogène
 				double4 pixel_Camera;
