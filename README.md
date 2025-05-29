@@ -51,17 +51,19 @@ des outils mathématiques de base tels que les vecteurs et les matrices. Cette l
 très utile puisqu’elle implémente plusieurs fonctions qui sont très pratiques en rendu.
 
 Une description plus complète du projet est disponible dans la section 
-[_Description détaillée du projet_](----).
+[_Description détaillée du projet_](https://github.com/ThikSag/raytracer_tp2_ift3355_a24?tab=readme-ov-file#description-d%C3%A9taill%C3%A9e-du-projet).
 
-De plus, une section concernant les [améliorations possibles](------) du projet est incluse 
-après la description détaillée.
+De plus, une section concernant les [améliorations possibles](https://github.com/ThikSag/raytracer_tp2_ift3355_a24?tab=readme-ov-file#am%C3%A9lioration-possible-du-projet) 
+du projet est incluse après la description détaillée.
 
 ## Explications des différentes branches du répertoire
-- La branche [_main_](-----) contient la version du code que ma coéquipière et moi avons 
-  remis pour l’évaluation de ce travail scolaire.
+- La branche [_main_](https://github.com/ThikSag/raytracer_tp2_ift3355_a24/tree/main) 
+  contient la version du code que ma coéquipière et moi avons remis pour l’évaluation de 
+  ce travail scolaire.
 <br><br>
-- La branche [_original_files_](-----) contient les fichiers **originaux** du squelette de 
-  code qui nous a été remis par notre professeur pour réaliser ce travail.
+- La branche [_original_files_](https://github.com/ThikSag/raytracer_tp2_ift3355_a24/tree/original_files) 
+  contient les fichiers **originaux** du squelette de code qui nous a été remis par notre 
+  professeur pour réaliser ce travail.
 
 ## Installation, configuration et lancement du projet
 ### Installation
@@ -97,12 +99,13 @@ et vous pouvez télécharger _CMake_ sur le site web suivant : https://cmake.org
 
 ## Description détaillée du projet
 Tel que mentionné précédemment, ce projet a été réalisé dans le cadre d’un travail pratique scolaire. 
-Dans cette section, je vais donc décrire les [tâches à accomplir](----) pour compléter ce travail 
-scolaire. J’apporterai ensuite quelques [précisions](----) concernant certaines parties du travail. 
+Dans cette section, je vais donc décrire les [tâches à accomplir](https://github.com/ThikSag/raytracer_tp2_ift3355_a24#les-t%C3%A2ches-%C3%A0-accomplir) 
+pour compléter ce travail scolaire. J’apporterai ensuite quelques [précisions](https://github.com/ThikSag/raytracer_tp2_ift3355_a24#pr%C3%A9cisions-suppl%C3%A9mentaires-sur-certaines-parties-du-travail) 
+concernant certaines parties du travail. 
 
 Pour ce travail, un squelette de code nous a été fourni et il nous fallait le compléter. Il est 
-possible de consulter le squelette de code tel qu’il nous a été remis dans la branche [_original_files_](----). 
-Vous pouvez consulter la section [_Explication des fichiers, des dossiers et du fonctionnement du programme_](----) 
+possible de consulter le squelette de code tel qu’il nous a été remis dans la branche [_original_files_](https://github.com/ThikSag/raytracer_tp2_ift3355_a24/tree/original_files). 
+Vous pouvez consulter la section [_Explication des fichiers, des dossiers et du fonctionnement du programme_](https://github.com/ThikSag/raytracer_tp2_ift3355_a24#explication-des-fichiers-des-dossiers-et-du-fonctionnement-du-programme) 
 pour avoir une brève description des différents éléments fournis dans le squelette de code.
 
 ### Les tâches à accomplir
@@ -136,7 +139,7 @@ pour avoir une brève description des différents éléments fournis dans le squ
 
 **Merci encore à ma coéquipière [Grace](https://github.com/gracenl2) avec qui j’ai réalisé ce projet.**
 
-[Retour en haut ⤴️](----)
+[Retour en haut ⤴️](https://github.com/ThikSag/raytracer_tp2_ift3355_a24#lancer-de-rayons---tp-2---ift3355-infographie---automne-2024)
 
 <!-- 
 -->
